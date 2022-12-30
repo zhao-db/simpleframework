@@ -2,7 +2,7 @@ package demo.pattern.factory.simple;
 
 import demo.pattern.factory.entity.DellMouse;
 import demo.pattern.factory.entity.HpMouse;
-import demo.pattern.factory.entity.LevenoMouse;
+import demo.pattern.factory.entity.LenovoMouse;
 import demo.pattern.factory.entity.Mouse;
 
 public class MouseFactory {
@@ -14,7 +14,7 @@ public class MouseFactory {
             case 2:
                 return new HpMouse();
             case 3:
-                return new LevenoMouse();
+                return new LenovoMouse();
             default:
                 return new DellMouse();
         }
