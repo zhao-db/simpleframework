@@ -14,6 +14,14 @@ import java.lang.annotation.Target;
  * @since 3.0.1
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 public @interface CourseInfoAnnotation {
+
+    public String courseName();
+
+    public String courseTag();
+
+    public String courseProfile();
+
+    public int courseIndex() default 303;
 }
