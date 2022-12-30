@@ -1,7 +1,7 @@
 package demo.pattern.factory.simple;
 
 import demo.pattern.factory.entity.DellMouse;
-import demo.pattern.factory.entity.HPMouse;
+import demo.pattern.factory.entity.HpMouse;
 import demo.pattern.factory.entity.LevenoMouse;
 import demo.pattern.factory.entity.Mouse;
 
@@ -12,7 +12,7 @@ public class MouseFactory {
             case 1:
                 return new DellMouse();
             case 2:
-                return new HPMouse();
+                return new HpMouse();
             case 3:
                 return new LevenoMouse();
             default:
