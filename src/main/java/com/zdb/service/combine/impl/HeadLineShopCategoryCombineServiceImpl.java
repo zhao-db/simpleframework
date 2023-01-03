@@ -3,6 +3,7 @@ package com.zdb.service.combine.impl;
 import java.util.List;
 
 import org.simpleframework.core.annotation.Service;
+import org.simpleframework.inject.annotation.Autowired;
 
 import com.zdb.entity.bo.HeadLine;
 import com.zdb.entity.bo.ShopCategory;
@@ -22,8 +23,9 @@ import com.zdb.service.solo.ShopCategoryService;
  */
 @Service
 public class HeadLineShopCategoryCombineServiceImpl implements HeadLineShopCategoryCombineService {
-
+    @Autowired
     private HeadLineService headLineService;
+    @Autowired
     private ShopCategoryService shopCategoryService;
 
     @Override

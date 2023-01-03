@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.simpleframework.core.annotation.Controller;
+import org.simpleframework.inject.annotation.Autowired;
 
 import com.zdb.entity.bo.HeadLine;
 import com.zdb.entity.bo.ShopCategory;
@@ -23,6 +24,7 @@ import com.zdb.service.solo.ShopCategoryService;
 @Controller
 public class ShopCategoryOperationController {
 
+    @Autowired
     private ShopCategoryService shopCategoryService;
 
     public Result<Boolean> addShopCategory(HttpServletRequest req, HttpServletResponse res) {

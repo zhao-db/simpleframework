@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.simpleframework.core.annotation.Controller;
+import org.simpleframework.inject.annotation.Autowired;
 
 import com.zdb.entity.bo.HeadLine;
 import com.zdb.entity.dto.Result;
@@ -22,6 +23,7 @@ import com.zdb.service.solo.HeadLineService;
 @Controller
 public class HeadLineOperationController {
 
+    @Autowired
     private HeadLineService headLineService;
 
     Result<Boolean> addHeadLine(HttpServletRequest req, HttpServletResponse res) {
