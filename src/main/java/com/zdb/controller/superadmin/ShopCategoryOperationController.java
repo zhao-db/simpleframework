@@ -5,6 +5,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.simpleframework.core.annotation.Controller;
+
 import com.zdb.entity.bo.HeadLine;
 import com.zdb.entity.bo.ShopCategory;
 import com.zdb.entity.dto.Result;
@@ -18,6 +20,7 @@ import com.zdb.service.solo.ShopCategoryService;
  * @author zhaodb 2022/12/30
  * @since 3.0.1
  */
+@Controller
 public class ShopCategoryOperationController {
 
     private ShopCategoryService shopCategoryService;

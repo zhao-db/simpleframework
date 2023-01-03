@@ -3,6 +3,8 @@ package com.zdb.controller.frontend;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.simpleframework.core.annotation.Controller;
+
 import com.zdb.entity.dto.MainPageInfoDTO;
 import com.zdb.entity.dto.Result;
 import com.zdb.service.combine.HeadLineShopCategoryCombineService;
@@ -15,6 +17,7 @@ import com.zdb.service.combine.HeadLineShopCategoryCombineService;
  * @author zhaodb 2022/12/29
  * @since 3.0.1
  */
+@Controller
 public class MainPageController {
 
     private HeadLineShopCategoryCombineService headLineShopCategoryCombineService;

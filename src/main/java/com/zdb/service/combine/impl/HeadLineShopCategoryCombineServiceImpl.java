@@ -2,6 +2,8 @@ package com.zdb.service.combine.impl;
 
 import java.util.List;
 
+import org.simpleframework.core.annotation.Service;
+
 import com.zdb.entity.bo.HeadLine;
 import com.zdb.entity.bo.ShopCategory;
 import com.zdb.entity.dto.MainPageInfoDTO;
@@ -18,6 +20,7 @@ import com.zdb.service.solo.ShopCategoryService;
  * @author zhaodb 2022/12/28
  * @since 3.0.1
  */
+@Service
 public class HeadLineShopCategoryCombineServiceImpl implements HeadLineShopCategoryCombineService {
 
     private HeadLineService headLineService;
